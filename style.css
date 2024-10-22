@@ -1,0 +1,133 @@
+@font-face {
+    font-family: TÍtulo;
+    src: url(/fonte/Popcat.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: Título;
+    font-weight: 900;
+    font-size: 5em;
+    text-align: center;
+
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: #000000;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background-color: #dddbdb;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem {
+    width: 12.5%;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -12.5%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -25%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -37.5%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -62.5%;
+}
+
+#imagem7:checked~.img1 {
+    margin-left: -75%;
+}
+
+#imagem8:checked~.img1 {
+    margin-left: -87.5%;
+}
+
+footer {
+    margin-top: 40%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    background-color: #b58eda;
+    padding: 4px;
+}
+
+h1 {
+
+    background-image: url(https://i.pinimg.com/originals/83/0b/c8/830bc82f6e22a8c70e2040e319d3e3bc.gif);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media(max-width:768px) {
+
+    .container {
+        height: 350px;
+        width: 350px;
+        top:60%;
+    }
+
+    footer {
+        margin-top: 125%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+          
+}
