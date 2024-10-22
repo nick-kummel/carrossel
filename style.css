@@ -1,5 +1,5 @@
 @font-face {
-    font-family: TÍtulo;
+    font-family: titulo;
     src: url(/fonte/Popcat.otf);
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: Título;
+    font-family: titulo;
     font-weight: 900;
     font-size: 5em;
     text-align: center;
